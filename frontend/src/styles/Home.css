@@ -1,0 +1,59 @@
+.home-container {
+  background: linear-gradient(135deg, #e6f7ff, #f0fff4);
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.hero-section {
+  margin-bottom: 80px;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 20px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  background-color: #3182ce;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: #2b6cb0;
+  transform: scale(1.05);
+}
+
+.home-card {
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.home-icon {
+  transition: transform 0.3s ease;
+}
+
+.home-card:hover .home-icon {
+  transform: scale(1.2);
+}
+
+.features-row {
+  margin-top: 40px;
+}
