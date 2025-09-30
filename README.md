@@ -1,4 +1,4 @@
-# OVSP Projekat
+# Obrada Velikih Skupova Podataka - Optimizacija dostava
 
 Ovaj projekat predstavlja platformu za analizu i predikciju u oblasti dostave hrane.  
 
