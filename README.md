@@ -4,7 +4,7 @@ Ovaj projekat predstavlja platformu za analizu i predikciju u oblasti dostave hr
 
 ## Tehnologije
 - **Backend:** FastAPI  
-- **Frontend:** React  
+- **Frontend:** React BootStrap
 - **Obrada podataka:** Spark (PySpark)  
 - **Baza podataka:** MongoDB  
 - **AI algoritmi:**  
