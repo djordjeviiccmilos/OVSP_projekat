@@ -9,7 +9,6 @@ spark = SparkSession.builder.appName("UserInputPrediction").getOrCreate()
 dataset_path = r"D:\faks\OVSP_projekat\dataset\deliverytime_analyzed.csv"
 df = spark.read.csv(dataset_path, header=True, inferSchema=True)
 
-# Assembler za regresiju
 assembler_lr = VectorAssembler(
     inputCols=["Restaurant_latitude", "Restaurant_longitude",
                "Delivery_location_latitude", "Delivery_location_longitude"],
@@ -54,6 +53,3 @@ def predict_user_delivery_json(user_lat, user_lon, top_n=10):
     } for row in near_restaurants.collect()])
 
     return result_json
-
-
-print(predict_user_delivery_json(12.012505, 24.250159))

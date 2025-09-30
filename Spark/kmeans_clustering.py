@@ -18,7 +18,7 @@ feature_columns = ["Restaurant_latitude", "Restaurant_longitude",
 assembler = VectorAssembler(inputCols=feature_columns, outputCol="features")
 df_features = assembler.transform(df).select("features", *df.columns)
 
-kmeans = KMeans(featuresCol="features", predictionCol="cluster", k=5)
+kmeans = KMeans(featuresCol="features", predictionCol="cluster", k=3)
 kmeans_model = kmeans.fit(df_features)
 
 kmeans_model.write().overwrite().save("../Spark_output/kmeans_model")

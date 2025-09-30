@@ -4,7 +4,6 @@ from backend.routers import deliveries, analytics, regression, kmeans, predict
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
-from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
